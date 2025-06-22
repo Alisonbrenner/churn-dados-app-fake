@@ -1,0 +1,56 @@
+link do chat: https://chatgpt.com/share/685194a1-cb7c-800c-b2f4-de9363d144cc
+
+estrutura:
+====================================================================================
+churn-predictor-engdados/
+│
+├── data/
+│   ├── raw/                 # Dados brutos simulados
+│   └── processed/           # Dados tratados
+│
+├── notebooks/
+│   └── eda_model.ipynb      # Análise exploratória e criação do modelo
+│
+├── src/
+│   ├── data_ingestion.py    # Script de ingestão dos dados
+│   ├── etl_pipeline.py      # Limpeza, transformação, cálculo de features
+│   ├── train_model.py       # Treinamento e avaliação do modelo
+│   └── api_fastapi.py       # API para servir o modelo
+│
+├── dashboards/
+│   └── churn_dashboard.py   # Dash ou Streamlit
+│
+├── Dockerfile
+├── requirements.txt
+├── README.md
+└── .gitignore
+
+====================================================================================
+
+
+Etapas detalhadas:
+
+Simulação dos dados  ✔️
+
+Pipeline de ingestão + transformação
+	1- criar aging de idade de tempo de uso do app; ✔️
+	2- alterar e formatar coluna data
+
+Análise exploratória e modelo preditivo
+
+API com FastAPI
+ 
+Dashboard com Streamlit
+
+Automatização com Airflow
+
+
+Ferramentas:
+
+ETL			>>>>>    Python (pandas)
+Armazenamento		>>>>>    CSV ou PostgreSQL
+Modelo preditivo	>>>>>    scikit-learn, XGBoost
+API			>>>>>    FastAPI
+Dashboard		>>>>>    Streamlit
+Orquestração		>>>>>    Apache Airflow (opcional)
+Containerização		>>>>>    Docker

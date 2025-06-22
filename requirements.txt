@@ -1,0 +1,8 @@
+pandas
+faker
+numpy
+ipykernel
+seaborn 
+matplotlib
+scikit-learn
+streamlit
